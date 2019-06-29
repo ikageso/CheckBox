@@ -15,7 +15,7 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <local:CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay}" WidthRequest="32" VerticalOptions="Center"/>
+            <local:CheckBox TrueImageSource="checkOn.png" FalseImageSource="checkOff.png" IsChecked="{Binding IsChecked, Mode=TwoWay}" WidthRequest="32" VerticalOptions="Center"/>
             <Label Text="is checked" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" FontSize="Large"/>
         </Grid>
         <Label Text="{Binding IsChecked}" HorizontalOptions="Center"/>

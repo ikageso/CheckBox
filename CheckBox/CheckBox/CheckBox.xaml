@@ -7,8 +7,8 @@
              x:Class="CheckBox.CheckBox">
   <ContentView.Content>
     <Grid>
-        <Image x:Name="checkOff" Source="checkOff.png" Aspect="AspectFit"/>
-        <Image x:Name="checkOn" Source="checkOn.png" Aspect="AspectFit"/>
+        <Image x:Name="checkOff" Aspect="AspectFit"/>
+        <Image x:Name="checkOn" Aspect="AspectFit"/>
             <Button BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Clicked="Button_Clicked"/>
         </Grid>
   </ContentView.Content>
