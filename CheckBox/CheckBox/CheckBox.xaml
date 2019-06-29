@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CheckBox.CheckBox">
+  <ContentView.Content>
+    <Grid>
+        <Image x:Name="checkOff" Source="checkOff.png" Aspect="AspectFit"/>
+        <Image x:Name="checkOn" Source="checkOn.png" Aspect="AspectFit"/>
+            <Button BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Clicked="Button_Clicked"/>
+        </Grid>
+  </ContentView.Content>
+</ContentView>

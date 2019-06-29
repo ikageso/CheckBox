@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:CheckBox"
+             mc:Ignorable="d"
+             x:Class="CheckBox.MainPage">
+    <ContentPage.BindingContext>
+        <local:MainViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="Center">
+        <Grid HorizontalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <local:CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay}" WidthRequest="32" VerticalOptions="Center"/>
+            <Label Text="is checked" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" FontSize="Large"/>
+        </Grid>
+        <Label Text="{Binding IsChecked}" HorizontalOptions="Center"/>
+    </StackLayout>
+
+</ContentPage>
